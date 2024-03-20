@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>My Instagram Feed</title>
+</head>
+
+<body>
+    <!--Inicio Navbar-->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1 text-secondary"><i class="fa-brands fa-instagram"></i> Instagram</span>
+            <!--Finaliza Navbar-->
+            <!--Inicia Modal-->
+            <div class="d-flex gap-5">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Caption:</h6>
+                                <textarea rows="4" cols="50" name="comment" form="usrform"
+                                    placeholder="Add the caption of your post here"></textarea>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-camera"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-secondary"><i
+                                        class="fa-solid fa-location-dot"></i>
+                                </button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Finaliza modal-->
+                <!--Inicia dropdown-->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        data-bs-display="static" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end ">
+                        <li><a class="dropdown-item active" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--Finaliza dropdown-->
+
+    <!--Inicio Navtab-->
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                    class="fa-solid fa-table-cells text-secondary"></i></button>
+        </li>
+        <li class=" nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                    class="fa-solid fa-square text-secondary"></i></button>
+        </li>
+
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <!--Posts de grid-->
+            <div class="container text-center">
+                <div class="row p-1">
+                    <div class="col">
+                        <img src="https://picsum.photos/id/7/400" alt="aleatory" class="img-fluid>
+            </div>
+            <div class=" col">
+                        <img src="https://picsum.photos/id/20/400" alt="aleatory" class="img-fluid>
+            </div>
+            <div class=" col">
+                        <img src="https://picsum.photos/id/40/400" alt="aleatory" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <img src="https://picsum.photos/id/56/400" alt="aleatory" class="img-fluid>
+            </div>
+            <div class=" col">
+                        <img src="https://picsum.photos/id/80/400" alt="aleatory" class="img-fluid >
+            </div>
+            <div class=" col">
+                        <img src="https://picsum.photos/id/96/400" alt="aleatory" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-center">
+                <div class="row p-1">
+                    <div class="col">
+                        <img src="https://picsum.photos/id/91/400" alt="aleatory" class="img-fluid>
+            </div>
+            <div class=" col">
+                        <img src="https://picsum.photos/id/117/400" alt="aleatory" class="img-fluid >
+            </div>
+            <div class=" col">
+                        <img src="https://picsum.photos/id/145/400" alt="aleatory" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <!--Post Sencillo-->
+            <div class="container  d-flex justify-content-center">
+                <div class="post w-50">
+                    <div class="row header">
+                        <div class="col-6">
+                            <h4>Vegan Burguers in Madrid</h4>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end align-items-center">
+                            <p class="m-0"><span>17/03</span></p>
+                        </div>
+                    </div>
+                    <img src="Assets/veganBurguer.jpeg" alt="veganBurguer" class="img-fluid">
+                    <p>
+                        One of the best vegan burguers I've ever had, you can find them in <strong>#"La Gran
+                            Via"</strong>in
+                        Madrid.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container  d-flex justify-content-center">
+                <div class="post w-50">
+                    <div class="row header">
+                        <div class="col-6">
+                            <h4>Romantic Views</h4>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end align-items-center">
+                            <p class="m-0"><span>18/03</span></p>
+                        </div>
+                    </div>
+                    <img src="Assets/romanticView.jpeg" alt="romanticView" class="img-fluid">
+                    <p>
+                        That feelling you get moments before boarding a plane <strong>#"nostalgic"</strong>such a
+                        romantic view.
+                    </p>
+                </div>
+            </div>
+
+            <div class="container  d-flex justify-content-center">
+                <div class="post w-50">
+                    <div class="row header">
+                        <div class="col-6">
+                            <h4>Salt flats in Bolivia</h4>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end align-items-center">
+                            <p class="m-0"><span>19/03</span></p>
+                        </div>
+                    </div>
+                    <img src="Assets/mirroring.jpeg" alt="salt flats and water" class="img-fluid">
+                    <p>
+                        This views are always around, specially when you are not looking for them...
+                        <strong>#"skyviews"</strong>
+                        just look around.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Finaliza Navtab-->
+
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

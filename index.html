@@ -13,11 +13,11 @@
 <body>
     <!--Inicio Navbar-->
     <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
+        <div class="container-fluid px-5">
             <span class="navbar-brand mb-0 h1 text-secondary"><i class="fa-brands fa-instagram"></i> Instagram</span>
             <!--Finaliza Navbar-->
             <!--Inicia Modal-->
-            <div class="d-flex gap-5">
+            <div class="d-flex gap-4 mx-3">
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Create a new post
                 </button>
@@ -32,7 +32,7 @@
                             </div>
                             <div class="modal-body">
                                 <h6>Caption:</h6>
-                                <textarea rows="4" cols="50" name="comment" form="usrform"
+                                <textarea rows="3" cols="50" name="comment" form="usrform"
                                     placeholder="Add the caption of your post here"></textarea>
                                 <button type="button" class="btn btn-outline-secondary"><i
                                         class="fa-solid fa-camera"></i>
@@ -43,7 +43,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-success">Save changes</button>
+                                <button type="button" class="btn btn-success">Publish</button>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
     <!--Finaliza dropdown-->
 
     <!--Inicio Navtab-->
-    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    <ul class="nav nav-tabs justify-content-center border-0" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
                 type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
@@ -133,8 +133,8 @@
         </div>
         <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
             <!--Post Sencillo-->
-            <div class="container  d-flex justify-content-center">
-                <div class="post w-50">
+            <div class="container  d-flex justify-content-center mb-3">
+                <div class="post w-50 border border-secondary-muted">
                     <div class="row header">
                         <div class="col-6">
                             <h4>Vegan Burguers in Madrid</h4>
@@ -152,8 +152,8 @@
                 </div>
             </div>
 
-            <div class="container  d-flex justify-content-center">
-                <div class="post w-50">
+            <div class="container  d-flex justify-content-center mb-3">
+                <div class="post w-50 border border-secondary-muted">
                     <div class="row header">
                         <div class="col-6">
                             <h4>Romantic Views</h4>
@@ -170,8 +170,8 @@
                 </div>
             </div>
 
-            <div class="container  d-flex justify-content-center">
-                <div class="post w-50">
+            <div class="container  d-flex justify-content-center mb-3">
+                <div class="post w-50 border border-secondary-muted">
                     <div class="row header">
                         <div class="col-6">
                             <h4>Salt flats in Bolivia</h4>
